@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function valuation(){
+var value,equity,valuation;
+value=Number(document.getElementById("first").value);
+equity=Number(document.getElementById("second").value);
+valuation= (value*100)/equity;
+document.getElementById("answer").value= valuation;
+}
+</script>
+</head>
+<body>
+Enter the price for the equity : <input id="first">
+Enter the equity in %: <input id="second">
+<button onclick="valuation()">valuate</button>
+<input id="answer">
+</body>
+</html>
